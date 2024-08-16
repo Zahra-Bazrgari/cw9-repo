@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="input-container">
+      <input type="text" id="user-url" placeholder="url input">
+      <select class="method-select" required>
+          <option value="" disabled selected hidden>select box</option>
+          <option value="GET">GET</option>
+          <option value="POST">POST</option>
+      </select>
+      <button class="submit">Submit</button>
+      <div class="error"></div>
+    </div>
+
+    <div class="response-container">
+      <p>Request Body:</p>
+      <textarea class="request-body" rows="10" cols="50"></textarea>
+    </div>
+
+    <div class="response-container">
+      <p>Response Body:</p>
+      <textarea class="response-body" rows="10" cols="50"></textarea>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
